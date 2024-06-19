@@ -20,30 +20,33 @@ export default function TopBar() {
 
   return (
     <div>
-      <div className="bg-secondary-800 w-screen h-8" style={{ WebkitAppRegion: 'drag' }}>
+      <div
+        className="bg-secondary-800 w-screen h-10 border-b-2 border-background-900" //fix width, works by removing w entirely, idk or with screen, or 18px which is reasonable if the Hello World exists
+        style={{ WebkitAppRegion: 'drag' }}
+      >
         <div
           id="app-title"
-          className="absolute align-middle p-1 left-2"
+          className="absolute text-xl font-expletus-sans align-middle p-2 left-2 text-text-200"
           style={{ WebkitAppRegion: 'no-drag' }}
         >
           Loft
         </div>
         <div
           id="control-buttons"
-          className="absolute align-middle right-2"
+          className="absolute align-middle right-2 text-text-200"
           style={{ WebkitAppRegion: 'no-drag' }}
         >
-          <button id="minimize" className="p-1" onClick={handleMinimize}>
+          <button id="minimize" className="p-2" onClick={handleMinimize}>
             &#128469;
           </button>
           <button
             id="maximize"
-            className="p-1"
+            className="p-2"
             onClick={isMaximized ? handleUnmaximize : handleMaximize}
           >
             &#128470;
           </button>
-          <button id="close" className="p-1" onClick={handleClose}>
+          <button id="close" className="p-2" onClick={handleClose}>
             &#x2715;
           </button>
         </div>
