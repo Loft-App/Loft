@@ -1,4 +1,7 @@
-export default function TopBar() {
+import React, { useState } from 'react'
+
+export default function LeftBar() {
+
   return (
     <div>
       <div

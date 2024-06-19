@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 export default function TopBar() {
+  //minimize, maximise, and close
   const [isMaximized, setIsMaximized] = useState(false)
 
   const handleMinimize = () => {
