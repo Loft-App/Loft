@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'expletus-sans': ['Expletus Sans', 'sans-serif'],
-        dosis: ['Dosis', 'sans-serif']
+        'dosis': ['Dosis', 'sans-serif']
       },
       colors: {
         text: {
