@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Search from './Search'
 
 export default function RightBar() {
 
@@ -7,7 +8,9 @@ export default function RightBar() {
       <div
         className="flex flex-col justify-start m-2.5 rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[16.875rem]" //fix height, only works on -40px for some unholy reason
         style={{ WebkitAppRegion: 'no-drag' }}
-      ></div>
+      >
+        <Search />
+      </div>
     </div>
   )
 }

@@ -25,6 +25,9 @@ export default function LeftBar() {
   const handleMore = () => {
     window.electron.ipcRenderer.send('go-more')
   }
+  const handleProfile = () => {
+    window.electron.ipcRenderer.send('go-profile')
+  }
 
   return (
     <div className="flex float-left">
@@ -56,7 +59,9 @@ export default function LeftBar() {
         <div id="more" className="" onClick={handleMore}>
           <img className="h-10 w-10" src="" alt="More"></img>
         </div>
-
+        <div id="profile" className="" onClick={handleProfile}>
+          {/* <Profile fillColor="main-accent" /> */}
+        </div>
         {/* include bottom of left nav items */}
       </div>
     </div>
