@@ -29,14 +29,14 @@ export default function TopBar() {
       >
         <div
           id="app-title"
-          className="absolute text-xl font-expletus-sans align-middle p-2 left-2 text-main-text"
+          className="absolute text-2xl font-expletus-sans content-center py-1.5 left-2.5 text-main-text font-semibold"
           style={{ WebkitAppRegion: 'no-drag' }}
         >
           Loft
         </div>
         <div
           id="control-buttons"
-          className="absolute align-middle right-2 text-main-text"
+          className="absolute content-center right-2 text-main-text font-semibold"
           style={{ WebkitAppRegion: 'no-drag' }}
         >
           <button id="minimize" className="p-2" onClick={handleMinimize}>

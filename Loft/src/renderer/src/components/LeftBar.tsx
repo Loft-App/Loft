@@ -27,13 +27,13 @@ export default function LeftBar() {
   }
 
   return (
-    <div>
+    <div className="flex float-left">
       <div
-        className="flex flex-col justify-start m-2.5 rounded-[5px] bg-main-primary opacity-70 h-screen w-[4.5rem]" //fix height, only works on -40px for some unholy reason
+        className="flex flex-col items-center m-2.5 gap-[1.875rem] rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[4.5rem]" //fix height, only works on -40px for some unholy reason
         style={{ WebkitAppRegion: 'no-drag' }}
       >
         {/* home */}
-        <div id="home" className="" onClick={handleHome}>
+        <div id="home" className="mt-4" onClick={handleHome}>
           <img className="h-10 w-10" src="" alt="Home"></img>
         </div>
         {/* direct messages */}
