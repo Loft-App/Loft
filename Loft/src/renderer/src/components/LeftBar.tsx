@@ -1,4 +1,11 @@
 import React, { useState } from 'react'
+import Home from '../../../../resources/cup-hot-fill'
+import DMs from '../../../../resources/chat-left-dots-fill'
+import Study from '../../../../resources/book-fill'
+import Calendar from '../../../../resources/calendar-week-fill'
+import Inbox from '../../../../resources/inbox-fill'
+import More from '../../../../resources/three-dots'
+import Profile from '../../../../resources/person-square'
 
 export default function LeftBar() {
 
@@ -36,31 +43,43 @@ export default function LeftBar() {
         style={{ WebkitAppRegion: 'no-drag' }}
       >
         {/* home */}
-        <div id="home" className="mt-4" onClick={handleHome}>
-          <img className="h-10 w-10" src="" alt="Home"></img>
+        <div
+          id="home"
+          className="mt-4 fill-current text-main-accent h-10 w-10"
+          onClick={handleHome}
+        >
+          <Home />
         </div>
         {/* direct messages */}
-        <div id="dm" className="" onClick={handleDM}>
-          <img className="h-10 w-10" src="" alt="DMs"></img>
+        <div id="dm" className="fill-current text-main-accent h-10 w-10" onClick={handleDM}>
+          <DMs />
         </div>
         {/* study */}
-        <div id="study" className="" onClick={handleStudy}>
-          <img className="h-10 w-10" src="" alt="Study"></img>
+        <div id="study" className="fill-current text-main-accent h-10 w-10" onClick={handleStudy}>
+          <Study />
         </div>
         {/* calendar */}
-        <div id="calendar" className="" onClick={handleCalendar}>
-          <img className="h-10 w-10" src="" alt="Calendar"></img>
+        <div
+          id="calendar"
+          className="fill-current text-main-accent h-10 w-10"
+          onClick={handleCalendar}
+        >
+          <Calendar />
         </div>
         {/* inbox */}
-        <div id="inbox" className="" onClick={handleInbox}>
-          <img className="h-10 w-10" src="" alt="Inbox"></img>
+        <div id="inbox" className="fill-current text-main-accent h-10 w-10" onClick={handleInbox}>
+          <Inbox />
         </div>
         {/* more */}
-        <div id="more" className="" onClick={handleMore}>
-          <img className="h-10 w-10" src="" alt="More"></img>
+        <div id="more" className="fill-current text-main-accent h-10 w-10" onClick={handleMore}>
+          <More />
         </div>
-        <div id="profile" className="" onClick={handleProfile}>
-          {/* <Profile fillColor="main-accent" /> */}
+        <div
+          id="profile"
+          className="fill-current text-main-accent h-10 w-10"
+          onClick={handleProfile}
+        >
+          <Profile />
         </div>
         {/* include bottom of left nav items */}
       </div>
