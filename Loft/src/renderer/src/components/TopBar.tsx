@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+//import menu somewhere (<Menu></Menu>)
+
 export default function TopBar() {
   //minimize, maximise, and close
   const [isMaximized, setIsMaximized] = useState(false)
@@ -22,19 +24,19 @@ export default function TopBar() {
   return (
     <div>
       <div
-        className="bg-secondary-800 w-screen h-10 border-b-2 border-background-900" //fix width, works by removing w entirely, idk or with screen, or 18px which is reasonable if the Hello World exists
+        className="bg-main-primary w-screen h-10" //fix width, works by removing w entirely, idk or with screen, or 18px which is reasonable if the Hello World exists
         style={{ WebkitAppRegion: 'drag' }}
       >
         <div
           id="app-title"
-          className="absolute text-xl font-expletus-sans align-middle p-2 left-2 text-text-200"
+          className="absolute text-xl font-expletus-sans align-middle p-2 left-2 text-main-text"
           style={{ WebkitAppRegion: 'no-drag' }}
         >
           Loft
         </div>
         <div
           id="control-buttons"
-          className="absolute align-middle right-2 text-text-200"
+          className="absolute align-middle right-2 text-main-text"
           style={{ WebkitAppRegion: 'no-drag' }}
         >
           <button id="minimize" className="p-2" onClick={handleMinimize}>

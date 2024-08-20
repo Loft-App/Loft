@@ -1,17 +1,16 @@
 import TopBar from './components/TopBar'
 import LeftBar from './components/LeftBar'
-import Menu from './components/Menu'
+import RightBar from './components/RightBar'
 
 function App(): JSX.Element {
   return (
     //overflow-auto to main
-    <main className="h-screen bg-background-900">
-      <TopBar>
-        <Menu></Menu>
-      </TopBar>
-      <LeftBar></LeftBar>
+    <main className="h-screen bg-main-background">
+      <TopBar />
+      <LeftBar />
+      <RightBar />
       <div className="">
-        {/* <h1 className="text text-lg text-text-50 px-4 py-2 font-expletus-sans">Hello World!</h1> */}
+        {/* <h1 className="text text-lg text-text-50 px-4 py-2 font-dosis">Hello World!</h1> */}
       </div>
     </main>
   )

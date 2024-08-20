@@ -8,6 +8,15 @@ module.exports = {
         'dosis': ['Dosis', 'sans-serif']
       },
       colors: {
+        main: {
+          text: 'var(--main-text)',
+          textli: 'var(--main-textli)',
+          background: 'var(--main-background)',
+          primary: 'var(--main-primary)',
+          secondary: 'var(--main-secondary)',
+          tertiary: 'var(--main-tertiary',
+          accent: 'var(--main-accent)'
+        },
         text: {
           50: 'var(--text-50)',
           100: 'var(--text-100)',
@@ -20,6 +29,19 @@ module.exports = {
           800: 'var(--text-800)',
           900: 'var(--text-900)',
           950: 'var(--text-950)'
+        },
+        textli: {
+          50: 'var(--textli-50)',
+          100: 'var(--textli-100)',
+          200: 'var(--textli-200)',
+          300: 'var(--textli-300)',
+          400: 'var(--textli-400)',
+          500: 'var(--textli-500)',
+          600: 'var(--textli-600)',
+          700: 'var(--textli-700)',
+          800: 'var(--textli-800)',
+          900: 'var(--textli-900)',
+          950: 'var(--textli-950)'
         },
         background: {
           50: 'var(--background-50)',
@@ -59,6 +81,19 @@ module.exports = {
           800: 'var(--secondary-800)',
           900: 'var(--secondary-900)',
           950: 'var(--secondary-950)'
+        },
+        tertiary: {
+          50: 'var(--tertiary-50)',
+          100: 'var(--tertiary-100)',
+          200: 'var(--tertiary-200)',
+          300: 'var(--tertiary-300)',
+          400: 'var(--tertiary-400)',
+          500: 'var(--tertiary-500)',
+          600: 'var(--tertiary-600)',
+          700: 'var(--tertiary-700)',
+          800: 'var(--tertiary-800)',
+          900: 'var(--tertiary-900)',
+          950: 'var(--tertiary-950)'
         },
         accent: {
           50: 'var(--accent-50)',
