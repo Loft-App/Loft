@@ -1,13 +1,5 @@
 import React, { useState } from 'react'
-import {
-  Home,
-  DMs,
-  Study,
-  Calendar,
-  Inbox,
-  More,
-  Profile
-} from '../../../../resources/LeftBarIcons'
+import { Home, DMs, Study, Calendar, Inbox, More, Profile } from '../assets/LeftBarIcons'
 
 export default function LeftBar() {
 
@@ -41,7 +33,7 @@ export default function LeftBar() {
   return (
     <div className="flex float-left">
       <div
-        className="flex flex-col items-center m-2.5 gap-[1.875rem] rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[4.5rem]" //fix height, only works on -40px for some unholy reason
+        className="flex flex-col items-center m-2.5 gap-[1.875rem] rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[4.5rem]"
         style={{ WebkitAppRegion: 'no-drag' }}
       >
         {/* home */}
