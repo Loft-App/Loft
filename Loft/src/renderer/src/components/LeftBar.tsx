@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import Home from '../../../../resources/cup-hot-fill'
-import DMs from '../../../../resources/chat-left-dots-fill'
-import Study from '../../../../resources/book-fill'
-import Calendar from '../../../../resources/calendar-week-fill'
-import Inbox from '../../../../resources/inbox-fill'
-import More from '../../../../resources/three-dots'
-import Profile from '../../../../resources/person-square'
+import {
+  Home,
+  DMs,
+  Study,
+  Calendar,
+  Inbox,
+  More,
+  Profile
+} from '../../../../resources/LeftBarIcons'
 
 export default function LeftBar() {
 
