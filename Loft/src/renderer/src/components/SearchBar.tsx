@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import { Search, Filter, FilterFill } from '../assets/RightBarIcons'
 
-export default function Search() {
+export default function SearchBar() {
 
   return (
     <div>

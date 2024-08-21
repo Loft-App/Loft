@@ -1,4 +1,25 @@
 import React, { useState } from 'react'
+import {
+  Notifications,
+  NotificationsOff,
+  Zen,
+  Camera,
+  CameraOff,
+  CaretDown,
+  CaretUp,
+  Settings,
+  Grip,
+  Channels,
+  Headphones,
+  Chains,
+  Mic,
+  MicMute,
+  Music,
+  Connections,
+  OtherPeople,
+  Help,
+  Trello
+} from '../assets/RightBarIcons'
 
 export default function Outliner() {
 
@@ -10,33 +31,70 @@ export default function Outliner() {
       >
         {/* insert drag icon here */}
         Outliner -
-        <div id="outliner-dropdowns" className="mt-[1.5625rem] text-xl">
+        <div
+          id="outliner-dropdowns"
+          className="mt-[1.5625rem] fill-current text-main-accent text-xl"
+        >
           {/* connections */}
           <div id="connections" className="">
-            Connections
-            <ul>
-              <li className="ml-4">test</li>
+            <div className="flex flex-row items-center h-[2.1875rem]">
+              <div className="h-[2.1875rem] w-[2.1875rem] mr-2.5">
+                <Connections />
+              </div>
+              Connections
+            </div>
+            <ul className="ml-4">
+              <li>test</li>
             </ul>
           </div>
           {/* other people */}
           <div id="other-people" className="">
-            Other People
-            <ul>
-              <li className="ml-4">test</li>
+            <div className="flex flex-row items-center h-[2.1875rem]">
+              <div className="h-[2.1875rem] w-[2.1875rem] mr-2.5">
+                <OtherPeople />
+              </div>
+              Other People
+            </div>
+            <ul className="ml-4">
+              <li>test</li>
             </ul>
           </div>
           {/* channels */}
           <div id="channels" className="">
-            Channels
-            <ul>
-              <li className="ml-4">test</li>
+            <div className="flex flex-row items-center h-[2.1875rem]">
+              <div className="h-[2.1875rem] w-[2.1875rem] mr-2.5">
+                <Channels />
+              </div>
+              Channels
+            </div>
+            <ul className="ml-4">
+              <li>test</li>
             </ul>
           </div>
           {/* chains */}
           <div id="chains" className="">
-            Chains
-            <ul>
-              <li className="ml-4">test</li>
+            <div className="flex flex-row items-center h-[2.1875rem]">
+              <div className="h-[2.1875rem] w-[2.1875rem] mr-2.5">
+                <Chains />
+              </div>
+              Chains
+            </div>
+            <ul className="ml-4">
+              <li>test</li>
+            </ul>
+          </div>
+          {/* quick settings */}
+          <div id="quick-settings" className="">
+            <div className="flex flex-row items-center h-[2.1875rem]">
+              <div className="h-[2.1875rem] w-[2.1875rem] mr-2.5">
+                <Settings />
+              </div>
+              Quick Settings
+            </div>
+            <ul className="ml-4">
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
             </ul>
           </div>
         </div>
