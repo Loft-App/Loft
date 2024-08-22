@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+//import React, { useState } from 'react'
 import { Home, DMs, Study, Calendar, Inbox, More, Profile } from '../assets/LeftBarIcons'
 
 export default function LeftBar() {
@@ -75,7 +75,6 @@ export default function LeftBar() {
         >
           <Profile />
         </div>
-        {/* include bottom of left nav items */}
       </div>
     </div>
   )

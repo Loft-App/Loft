@@ -1,23 +1,23 @@
-import React, { useState } from 'react'
+//import React, { useState } from 'react'
 import {
   Notifications,
-  NotificationsOff,
+  //NotificationsOff,
   Zen,
   Camera,
-  CameraOff,
-  CaretDown,
-  CaretUp,
+  //CameraOff,
+  //CaretDown,
+  //CaretUp,
   Settings,
   Grip,
   Channels,
   Headphones,
   Chains,
   Mic,
-  MicMute,
+  //MicMute,
   Music,
   Connections,
   OtherPeople,
-  Help,
+  //Help,
   Trello
 } from '../assets/RightBarIcons'
 
@@ -45,7 +45,7 @@ export default function Outliner() {
               </div>
               Connections
             </div>
-            <ul className="mx-4">
+            <ul className="mx-6">
               <li>test</li>
             </ul>
           </div>
@@ -57,7 +57,7 @@ export default function Outliner() {
               </div>
               Other People
             </div>
-            <ul className="mx-4">
+            <ul className="mx-6">
               <li>test</li>
             </ul>
           </div>
@@ -69,7 +69,7 @@ export default function Outliner() {
               </div>
               Channels
             </div>
-            <ul className="mx-4">
+            <ul className="mx-6">
               <li>test</li>
             </ul>
           </div>
@@ -81,7 +81,7 @@ export default function Outliner() {
               </div>
               Chains
             </div>
-            <ul className="mx-4">
+            <ul className="mx-6">
               <li>test</li>
             </ul>
           </div>
@@ -93,7 +93,7 @@ export default function Outliner() {
               </div>
               Quick Settings
             </div>
-            <ul className="mx-4">
+            <ul className="mx-6">
               {/* mic volume */}
               <li id="mic-volume" className="flex flex-row items-center h-[2.1875rem]">
                 <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
@@ -116,7 +116,7 @@ export default function Outliner() {
                 test
               </li>
             </ul>
-            <ul className="flex flex-row mx-4">
+            <ul className="flex flex-row justify-center mx-6">
               {/* video togggle */}
               <li id="mic-volume" className="flex flex-row items-center h-[2.1875rem]">
                 <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
