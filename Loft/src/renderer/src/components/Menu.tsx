@@ -1,5 +1,7 @@
 import{ useState } from 'react'
 
+//not to be used currently
+
 export default function Menu() {
   //make left bar larger/smaller
   const [isLarge, setIsLarge] = useState(false)

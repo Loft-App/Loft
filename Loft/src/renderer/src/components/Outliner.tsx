@@ -29,13 +29,13 @@ export default function Outliner() {
         className="flex flex-col justify-start font-dosis text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]"
         style={{ WebkitAppRegion: 'no-drag' }}
       >
-        {/* insert drag icon here */}
         <div className="flex flex-row items-center h-[2.1875rem]">
           <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-1">
             <Grip />
           </div>
           Outliner -
         </div>
+        {/* drop down lists here */}
         <div id="outliner-dropdowns" className="mt-5 fill-current text-xl">
           {/* connections */}
           <div id="connections" className="">

@@ -23,10 +23,8 @@ export default function TopBar() {
 
   return (
     <div>
-      <div
-        className="bg-main-primary w-screen h-10" //fix width, works by removing w entirely, idk or with screen, or 18px which is reasonable if the Hello World exists
-        style={{ WebkitAppRegion: 'drag' }}
-      >
+      <div className="bg-main-primary w-screen h-10" style={{ WebkitAppRegion: 'drag' }}>
+        {/* loft text */}
         <div
           id="app-title"
           className="absolute text-2xl font-expletus-sans content-center py-1.5 left-2.5 text-main-text font-semibold"
@@ -34,6 +32,7 @@ export default function TopBar() {
         >
           Loft
         </div>
+        {/* close, minimise, and maximise buttons */}
         <div
           id="control-buttons"
           className="absolute content-center right-2 text-main-text font-semibold"
@@ -45,6 +44,7 @@ export default function TopBar() {
           <button
             id="maximize"
             className="p-2"
+            //if maximised true, unmaximise, otherwise maximise
             onClick={isMaximized ? handleUnmaximize : handleMaximize}
           >
             &#128470;
