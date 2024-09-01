@@ -14,8 +14,9 @@ module.exports = {
           background: 'var(--main-background)',
           primary: 'var(--main-primary)',
           secondary: 'var(--main-secondary)',
-          tertiary: 'var(--main-tertiary',
-          accent: 'var(--main-accent)'
+          tertiary: 'var(--main-tertiary)',
+          accent: 'var(--main-accent)',
+          active: 'var(--main-active)'
         },
         text: {
           50: 'var(--text-50)',

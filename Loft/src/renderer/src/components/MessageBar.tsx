@@ -3,11 +3,17 @@
 export default function MessageBar() {
 
   return (
-    <div className="flex mb-2.5">
+    <div className="flex flex-col mx-2">
       <div
-        className="flex flex-col justify-start m-2.5 rounded-[5px] bg-main-tertiary opacity-80 min-h-24 min-w-0" //width set to 0 for future debugging FIX
+        className="flex mb-2 rounded-[5px] bg-main-tertiary opacity-80 min-h-24 min-w-[calc(100vw-396px)]" //not showing box dimensions
         style={{ WebkitAppRegion: 'no-drag' }}
       ></div>
+      <div
+        className="flex justify-start mb-2.5 min-h-2.1875rem min-w-[calc(100vw-396px)]" //not showing box dimensions
+        style={{ WebkitAppRegion: 'no-drag' }}
+      >
+        icons here
+      </div>
     </div>
   )
 }
