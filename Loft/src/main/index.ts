@@ -57,26 +57,26 @@ app.whenReady().then(() => {
   // ipcMain.on('ping', () => console.log('pong'))
 
   ipcMain.on('minimize-window', () => {
-    const currentWindow = BrowserWindow.getFocusedWindow();
+    const currentWindow = BrowserWindow.getFocusedWindow()
     if (currentWindow) {
       currentWindow.minimize()
     }
   })
 
   ipcMain.on('maximize-window', () => {
-    const currentWindow = BrowserWindow.getFocusedWindow();
+    const currentWindow = BrowserWindow.getFocusedWindow()
     if (currentWindow) {
       currentWindow.maximize()
     }
   })
 
   ipcMain.on('unmaximize-window', () => {
-    const window = BrowserWindow.getFocusedWindow();
+    const window = BrowserWindow.getFocusedWindow()
     if (window) window.unmaximize()
-  });
+  })
 
   ipcMain.on('close-window', () => {
-    const currentWindow = BrowserWindow.getFocusedWindow();
+    const currentWindow = BrowserWindow.getFocusedWindow()
     if (currentWindow) {
       currentWindow.close()
     }

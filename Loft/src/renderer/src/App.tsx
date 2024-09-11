@@ -1,7 +1,7 @@
 import TopBar from './components/TopBar'
 import LeftBar from './components/LeftBar'
 import RightBar from './components/RightBar'
-import MessageBar from './components/MessageBar'
+import HomePage from './components/HomePage'
 
 function App(): JSX.Element {
   return (
@@ -10,7 +10,7 @@ function App(): JSX.Element {
       <TopBar />
       <LeftBar />
       <RightBar />
-      <MessageBar />
+      <HomePage />
       <div className="">
         {/* <h1 className="text text-lg text-text-50 px-4 py-2 font-dosis">Hello World!</h1> */}
       </div>

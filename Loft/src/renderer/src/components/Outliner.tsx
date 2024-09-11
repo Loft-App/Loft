@@ -22,6 +22,13 @@ import {
 } from '../assets/RightBarIcons'
 
 export default function Outliner() {
+  //create onClick function using current (not active) to check and change active states
+  //implement ways to differentiate between classes
+  let videoToggle = document.getElementById('video-toggle')
+
+  const toggleActive = () => {
+    videoToggle.classList.toggle('active')
+  }
 
   return (
     <div>
@@ -135,27 +142,32 @@ export default function Outliner() {
               </li>
             </ul>
             <ul className="flex flex-row justify-center mx-6">
-              {/* video togggle */}
-              <li id="mic-volume" className="flex flex-row items-center h-[2.1875rem]">
-                <div className="fill-current text-main-accent active:text-main-active h-[2.1875rem] w-[2.1875rem] mr-2.5">
+              {/* video toggle */}
+              {/* testing for active state const */}
+              <li
+                id="video-toggle"
+                className="flex flex-row items-center h-[2.1875rem]"
+                onClick={toggleActive}
+              >
+                <div className="fill-current text-main-accent active:text-main-active cursor-pointer h-[2.1875rem] w-[2.1875rem] mr-2.5">
                   <Camera />
                 </div>
               </li>
               {/* notification toggle */}
-              <li id="headphone-volume" className="flex flex-row items-center h-[2.1875rem]">
-                <div className="fill-current text-main-accent active:text-main-active h-[2.1875rem] w-[2.1875rem] mr-2.5">
+              <li id="notif-toggle" className="flex flex-row items-center h-[2.1875rem]">
+                <div className="fill-current text-main-accent active:text-main-active cursor-pointer h-[2.1875rem] w-[2.1875rem] mr-2.5">
                   <Notifications />
                 </div>
               </li>
               {/* zen mode */}
-              <li id="music-volume" className="flex flex-row items-center h-[2.1875rem]">
-                <div className="fill-current text-main-accent active:text-main-active h-[2.1875rem] w-[2.1875rem] mr-2.5">
+              <li id="zen-toggle" className="flex flex-row items-center h-[2.1875rem]">
+                <div className="fill-current text-main-accent active:text-main-active cursor-pointer h-[2.1875rem] w-[2.1875rem] mr-2.5">
                   <Zen />
                 </div>
               </li>
               {/* trello integration */}
-              <li id="music-volume" className="flex flex-row items-center h-[2.1875rem]">
-                <div className="fill-current text-main-accent active:text-main-active h-[2.1875rem] w-[2.1875rem] mr-2.5">
+              <li id="trello" className="flex flex-row items-center h-[2.1875rem]">
+                <div className="fill-current text-main-accent active:text-main-active cursor-pointer h-[2.1875rem] w-[2.1875rem] mr-2.5">
                   <Trello />
                 </div>
               </li>

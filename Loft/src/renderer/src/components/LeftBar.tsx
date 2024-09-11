@@ -1,33 +1,55 @@
-//import React, { useState } from 'react'
+import React, { useState } from 'react'
 import { Home, DMs, Study, Calendar, Inbox, More, Profile } from '../assets/LeftBarIcons'
 
 export default function LeftBar() {
-
   //functions for leftbar menu
   //unfinished, handle need to complete func, and need usestate for only one
 
-  //const [] = useState(false)
+  const [isSelected, setIsSelected] = useState(false)
+
+  //make function to set all else to false if needed?
 
   const handleHome = () => {
-    window.electron.ipcRenderer.send('go-home')
+    if (isSelected == false) {
+      //add page navigator or call to component
+      setIsSelected(true)
+    }
   }
   const handleDM = () => {
-    window.electron.ipcRenderer.send('go-dm')
+    if (isSelected == false) {
+      //add page navigator
+      setIsSelected(true)
+    }
   }
   const handleStudy = () => {
-    window.electron.ipcRenderer.send('go-study')
+    if (isSelected == false) {
+      //add page navigator
+      setIsSelected(true)
+    }
   }
   const handleCalendar = () => {
-    window.electron.ipcRenderer.send('go-calendar')
+    if (isSelected == false) {
+      //add page navigator
+      setIsSelected(true)
+    }
   }
   const handleInbox = () => {
-    window.electron.ipcRenderer.send('go-inbox')
+    if (isSelected == false) {
+      //add page navigator
+      setIsSelected(true)
+    }
   }
   const handleMore = () => {
-    window.electron.ipcRenderer.send('go-more')
+    if (isSelected == false) {
+      //add page navigator
+      setIsSelected(true)
+    }
   }
   const handleProfile = () => {
-    window.electron.ipcRenderer.send('go-profile')
+    if (isSelected == false) {
+      //add page navigator
+      setIsSelected(true)
+    }
   }
 
   return (
@@ -65,12 +87,13 @@ export default function LeftBar() {
           <Inbox />
         </div>
         {/* more */}
+        {/* Add later, maybe as toast */}
         <div id="more" className="fill-current text-main-accent h-10 w-10" onClick={handleMore}>
           <More />
         </div>
         <div
           id="profile"
-          className="fill-current text-main-accent h-10 w-10"
+          className="fill-current text-main-accent h-10 w-10" //find solution other than absolute
           onClick={handleProfile}
         >
           <Profile />

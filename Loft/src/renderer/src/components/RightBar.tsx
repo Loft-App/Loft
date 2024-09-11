@@ -3,7 +3,6 @@ import SearchBar from './SearchBar'
 import Outliner from './Outliner'
 
 export default function RightBar() {
-
   return (
     <div className="flex float-right">
       <div
