@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Home, DMs, Study, Calendar, Inbox, More, Profile } from '../assets/LeftBarIcons'
 
 export default function LeftBar() {
@@ -53,11 +53,12 @@ export default function LeftBar() {
   }
 
   return (
-    <div className="flex float-left">
-      <div
-        className="flex flex-col items-center m-2.5 gap-[1.875rem] rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[4.5rem]"
-        style={{ WebkitAppRegion: 'no-drag' }}
-      >
+    <div
+      className="flex float-left justify-center m-2.5 rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[4.5rem]"
+      style={{ WebkitAppRegion: 'no-drag' }}
+    >
+      {/* find solution other than mx? margin is pushing away bottom div */}
+      <div className="flex flex-col justify-start gap-[1.875rem]">
         {/* home */}
         <div
           id="home"
@@ -87,16 +88,20 @@ export default function LeftBar() {
           <Inbox />
         </div>
         {/* more */}
-        {/* Add later, maybe as toast */}
+        {/* add later, maybe as toast */}
         <div id="more" className="fill-current text-main-accent h-10 w-10" onClick={handleMore}>
           <More />
         </div>
-        <div
-          id="profile"
-          className="fill-current text-main-accent h-10 w-10" //find solution other than absolute
-          onClick={handleProfile}
-        >
-          <Profile />
+        <div className="mt-auto">
+          {/* profile */}
+          {/* add later, maybe as toast */}
+          <div
+            id="profile"
+            className="mb-4 fill-current text-main-accent h-10 w-10"
+            onClick={handleProfile}
+          >
+            <Profile />
+          </div>
         </div>
       </div>
     </div>

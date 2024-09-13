@@ -5,7 +5,7 @@ export default function HomePage() {
   //handle functions go here as well as useStates
 
   return (
-    <div>
+    <div className="flex flex-col m-2.5">
       <MessageBar />
     </div>
   )

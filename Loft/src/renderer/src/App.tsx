@@ -11,9 +11,7 @@ function App(): JSX.Element {
       <LeftBar />
       <RightBar />
       <HomePage />
-      <div className="">
-        {/* <h1 className="text text-lg text-text-50 px-4 py-2 font-dosis">Hello World!</h1> */}
-      </div>
+      <div className="">{/*  */}</div>
     </main>
   )
 }
