@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  .drag {
+    -webkit-app-region: drag;
+  }
+  .no-drag {
+    -webkit-app-region: no-drag;
+  }
+  .dropdown-menu {
+  }
   :root {
-
     --main-text: #111312;
     --main-textli: #f5eaea;
     --main-background: #7a5844;

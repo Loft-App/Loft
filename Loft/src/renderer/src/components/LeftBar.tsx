@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Home, DMs, Study, Calendar, Inbox, More, Profile } from '../assets/LeftBarIcons'
 
-export default function LeftBar() {
+export default function LeftBar(): JSX.Element {
   //functions for leftbar menu
   //unfinished, handle need to complete func, and need usestate for only one
 
@@ -9,43 +9,43 @@ export default function LeftBar() {
 
   //make function to set all else to false if needed?
 
-  const handleHome = () => {
+  const handleHome = (): void => {
     if (isSelected == false) {
       //add page navigator or call to component
       setIsSelected(true)
     }
   }
-  const handleDM = () => {
+  const handleDM = (): void => {
     if (isSelected == false) {
       //add page navigator
       setIsSelected(true)
     }
   }
-  const handleStudy = () => {
+  const handleStudy = (): void => {
     if (isSelected == false) {
       //add page navigator
       setIsSelected(true)
     }
   }
-  const handleCalendar = () => {
+  const handleCalendar = (): void => {
     if (isSelected == false) {
       //add page navigator
       setIsSelected(true)
     }
   }
-  const handleInbox = () => {
+  const handleInbox = (): void => {
     if (isSelected == false) {
       //add page navigator
       setIsSelected(true)
     }
   }
-  const handleMore = () => {
+  const handleMore = (): void => {
     if (isSelected == false) {
       //add page navigator
       setIsSelected(true)
     }
   }
-  const handleProfile = () => {
+  const handleProfile = (): void => {
     if (isSelected == false) {
       //add page navigator
       setIsSelected(true)
@@ -53,10 +53,7 @@ export default function LeftBar() {
   }
 
   return (
-    <div
-      className="flex float-left justify-center m-2.5 rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[4.5rem]"
-      style={{ WebkitAppRegion: 'no-drag' }}
-    >
+    <div className="no-drag flex float-left justify-center m-2.5 rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[4.5rem]">
       {/* find solution other than mx? margin is pushing away bottom div */}
       <div className="flex flex-col justify-start gap-[1.875rem]">
         {/* home */}

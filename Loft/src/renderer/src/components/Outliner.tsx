@@ -21,20 +21,11 @@ import {
   Trello
 } from '../assets/RightBarIcons'
 
-export default function Outliner() {
+export default function Outliner(): JSX.Element {
   //create onClick function using current (not active) to check and change active states
   //implement ways to differentiate between classes
-  let videoToggle = document.getElementById('video-toggle')
-
-  const toggleActive = () => {
-    videoToggle.classList.toggle('active')
-  }
-
   return (
-    <div
-      className="flex flex-col justify-start font-dosis text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]"
-      style={{ WebkitAppRegion: 'no-drag' }}
-    >
+    <div className="no-drag flex flex-col justify-start font-dosis text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]">
       <div className="flex flex-row items-center font-medium h-[2.1875rem]">
         <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-1">
           <Grip />
@@ -47,7 +38,7 @@ export default function Outliner() {
       {/* drop down lists here */}
       <div id="outliner-dropdowns" className="mt-5 fill-current text-xl">
         {/* connections */}
-        <div id="connections" className="">
+        <button id="connections-btn" className="dropdown-menu">
           <div className="flex flex-row items-center h-[2.1875rem]">
             <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
               <Connections />
@@ -57,12 +48,14 @@ export default function Outliner() {
               <CaretUp />
             </div>
           </div>
+        </button>
+        <div id="connections-dropdowns" className="">
           <ul className="mx-6">
             <li>test</li>
           </ul>
         </div>
         {/* other people */}
-        <div id="other-people" className="">
+        <button id="other-people-btn" className="dropdown-menu">
           <div className="flex flex-row items-center h-[2.1875rem]">
             <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
               <OtherPeople />
@@ -72,12 +65,14 @@ export default function Outliner() {
               <CaretUp />
             </div>
           </div>
+        </button>
+        <div id="other-people-dropdowns" className="">
           <ul className="mx-6">
             <li>test</li>
           </ul>
         </div>
         {/* channels */}
-        <div id="channels" className="">
+        <button id="channels-btn" className="dropdown-menu">
           <div className="flex flex-row items-center h-[2.1875rem]">
             <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
               <Channels />
@@ -87,12 +82,14 @@ export default function Outliner() {
               <CaretUp />
             </div>
           </div>
+        </button>
+        <div id="channels-dropdowns" className="">
           <ul className="mx-6">
             <li>test</li>
           </ul>
         </div>
         {/* chains */}
-        <div id="chains" className="">
+        <button id="chains-btn" className="dropdown-menu">
           <div className="flex flex-row items-center h-[2.1875rem]">
             <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
               <Chains />
@@ -102,12 +99,14 @@ export default function Outliner() {
               <CaretUp />
             </div>
           </div>
+        </button>
+        <div id="chains-dropdowns" className="">
           <ul className="mx-6">
             <li>test</li>
           </ul>
         </div>
         {/* quick settings */}
-        <div id="quick-settings" className="">
+        <button id="quick-settings-btn" className="dropdown-menu">
           <div className="flex flex-row mt-auto items-center h-[2.1875rem]">
             <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
               <Settings />
@@ -117,6 +116,8 @@ export default function Outliner() {
               <CaretUp />
             </div>
           </div>
+        </button>
+        <div id="quick-settings-dropdowns" className="">
           <ul className="mx-6">
             {/* mic volume */}
             <li id="mic-volume" className="flex flex-row items-center h-[2.1875rem]">
@@ -143,11 +144,7 @@ export default function Outliner() {
           <ul className="flex flex-row justify-center mx-6">
             {/* video toggle */}
             {/* testing for active state const */}
-            <li
-              id="video-toggle"
-              className="flex flex-row items-center h-[2.1875rem]"
-              onClick={toggleActive}
-            >
+            <li id="video-toggle" className="flex flex-row items-center h-[2.1875rem]">
               <div className="fill-current text-main-accent active:text-main-active cursor-pointer h-[2.1875rem] w-[2.1875rem] mr-2.5">
                 <Camera />
               </div>
@@ -174,5 +171,5 @@ export default function Outliner() {
         </div>
       </div>
     </div>
-)
+  )
 }

@@ -1,7 +1,7 @@
 //import React, { useState } from 'react'
 import MessageBar from './MessageBar'
 
-export default function HomePage() {
+export default function HomePage(): JSX.Element {
   //handle functions go here as well as useStates
 
   return (
