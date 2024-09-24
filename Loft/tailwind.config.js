@@ -1,4 +1,5 @@
-let plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -6,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'expletus-sans': ['Expletus Sans', 'sans-serif'],
-        'dosis': ['Dosis', 'sans-serif']
+        sans: ['Dosis', ...defaultTheme.fontFamily.sans],
+        expletus: ['ExpletusSans']
       },
       colors: {
         main: {

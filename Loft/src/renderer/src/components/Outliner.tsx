@@ -25,7 +25,7 @@ export default function Outliner(): JSX.Element {
   //create onClick function using current (not active) to check and change active states
   //implement ways to differentiate between classes
   return (
-    <div className="no-drag flex flex-col justify-start font-dosis text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]">
+    <div className="no-drag flex flex-col justify-start font-sans text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]">
       <div className="flex flex-row items-center font-medium h-[2.1875rem]">
         <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-1">
           <Grip />

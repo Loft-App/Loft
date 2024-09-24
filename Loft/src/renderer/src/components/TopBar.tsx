@@ -26,7 +26,7 @@ export default function TopBar(): JSX.Element {
       {/* loft text */}
       <div
         id="app-title"
-        className="no-drag absolute text-2xl font-expletus-sans content-center py-1.5 left-2.5 text-main-text font-semibold"
+        className="no-drag absolute text-2xl font-expletus content-center py-1.5 left-2.5 text-main-text font-semibold"
       >
         Loft
       </div>

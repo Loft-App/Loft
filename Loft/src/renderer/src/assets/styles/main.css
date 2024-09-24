@@ -11,7 +11,40 @@
   }
   .dropdown-menu {
   }
+  @supports (font-variation-settings: normal) {
+    @font-face {
+      font-family: "Expletus_Sans";
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url("../fonts/Expletus_Sans/ExpletusSans-VariableFont_wght.ttf")
+        format("truetype");
+      font-named-instance: "Regular";
+    }
+
+    @font-face {
+      font-family: "Expletus_Sans";
+      font-style: italic;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url("../fonts/Expletus_Sans/ExpletusSans-Italic-VariableFont_wght.ttf")
+        format("truetype");
+      font-named-instance: "Italic";
+    }
+
+    @font-face {
+      font-family: "Dosis";
+      font-style: normal;
+      font-weight: 200 800;
+      font-display: swap;
+      src: url("../fonts/Dosis/Dosis-VariableFont_wght.ttf")
+        format("ttf");;
+        font-named-instance: "Regular";
+    }
+  }
   :root {
+    @apply antialiased font-sans;
+
     --main-text: #111312;
     --main-textli: #f5eaea;
     --main-background: #7a5844;
