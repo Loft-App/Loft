@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Dosis', ...defaultTheme.fontFamily.sans],
-        expletus: ['ExpletusSans']
+        expletus: ['Expletus Sans']
       },
       colors: {
         main: {

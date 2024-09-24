@@ -13,7 +13,7 @@
   }
   @supports (font-variation-settings: normal) {
     @font-face {
-      font-family: "Expletus_Sans";
+      font-family: "Expletus Sans";
       font-style: normal;
       font-weight: 400 700;
       font-display: swap;
@@ -23,7 +23,7 @@
     }
 
     @font-face {
-      font-family: "Expletus_Sans";
+      font-family: "Expletus Sans";
       font-style: italic;
       font-weight: 400 700;
       font-display: swap;
@@ -38,12 +38,13 @@
       font-weight: 200 800;
       font-display: swap;
       src: url("../fonts/Dosis/Dosis-VariableFont_wght.ttf")
-        format("ttf");;
+        format("truetype");;
         font-named-instance: "Regular";
     }
   }
   :root {
     @apply antialiased font-sans;
+    @apply antialiased font-expletus;
 
     --main-text: #111312;
     --main-textli: #f5eaea;
