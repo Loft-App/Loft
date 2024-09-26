@@ -1,4 +1,8 @@
 //import React, { useState } from 'react'
+import ConnectionsDrop from './ConnectionsDrop'
+import OtherPeopleDrop from './OtherPeopleDrop'
+import ChannelsDrop from './ChannelsDrop'
+import ChainsDrop from './ChainsDrop'
 import {
   Notifications,
   //NotificationsOff,
@@ -9,110 +13,47 @@ import {
   CaretUp,
   Settings,
   Grip,
-  Channels,
   Headphones,
-  Chains,
   Mic,
   //MicMute,
   Music,
-  Connections,
-  OtherPeople,
   Help,
   Trello
 } from '../assets/RightBarIcons'
 
+//fixed minimum window size problem with overflow-y-auto
 export default function Outliner(): JSX.Element {
   //create onClick function using current (not active) to check and change active states
   //implement ways to differentiate between classes
   return (
-    <div className="no-drag flex flex-col justify-start font-sans font-normal text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]">
+    <div className="no-drag flex flex-col justify-start font-sans font-medium text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]">
       <div className="flex flex-row items-center font-medium h-[2.1875rem]">
         <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-1">
           <Grip />
         </div>
         Outliner -
-        <div className="fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
+        <div className="mr-1 ml-auto fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
           <Help />
         </div>
       </div>
       {/* drop down lists here */}
-      <div id="outliner-dropdowns" className="mt-5 fill-current text-xl">
+      <div id="outliner-dropdowns" className="mt-4 fill-current text-xl overflow-y-auto">
         {/* connections */}
-        <button id="connections-btn" className="dropdown-menu">
-          <div className="flex flex-row items-center h-[2.1875rem]">
-            <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
-              <Connections />
-            </div>
-            Connections
-            <div className="fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
-              <CaretUp />
-            </div>
-          </div>
-        </button>
-        <div id="connections-dropdowns" className="">
-          <ul className="mx-6">
-            <li>test</li>
-          </ul>
-        </div>
+        <ConnectionsDrop />
         {/* other people */}
-        <button id="other-people-btn" className="dropdown-menu">
-          <div className="flex flex-row items-center h-[2.1875rem]">
-            <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
-              <OtherPeople />
-            </div>
-            Other People
-            <div className="fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
-              <CaretUp />
-            </div>
-          </div>
-        </button>
-        <div id="other-people-dropdowns" className="">
-          <ul className="mx-6">
-            <li>test</li>
-          </ul>
-        </div>
+        <OtherPeopleDrop />
         {/* channels */}
-        <button id="channels-btn" className="dropdown-menu">
-          <div className="flex flex-row items-center h-[2.1875rem]">
-            <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
-              <Channels />
-            </div>
-            Channels
-            <div className="fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
-              <CaretUp />
-            </div>
-          </div>
-        </button>
-        <div id="channels-dropdowns" className="">
-          <ul className="mx-6">
-            <li>test</li>
-          </ul>
-        </div>
+        <ChannelsDrop />
         {/* chains */}
-        <button id="chains-btn" className="dropdown-menu">
-          <div className="flex flex-row items-center h-[2.1875rem]">
-            <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
-              <Chains />
-            </div>
-            Chains
-            <div className="fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
-              <CaretUp />
-            </div>
-          </div>
-        </button>
-        <div id="chains-dropdowns" className="">
-          <ul className="mx-6">
-            <li>test</li>
-          </ul>
-        </div>
+        <ChainsDrop />
         {/* quick settings */}
-        <button id="quick-settings-btn" className="dropdown-menu">
+        <button id="quick-settings-btn" className="">
           <div className="flex flex-row mt-auto items-center h-[2.1875rem]">
             <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-2.5">
               <Settings />
             </div>
             Quick Settings
-            <div className="fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
+            <div className="ml-auto fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
               <CaretUp />
             </div>
           </div>
