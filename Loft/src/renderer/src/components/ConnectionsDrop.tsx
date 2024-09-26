@@ -1,6 +1,19 @@
+import { useState } from 'react'
 import { CaretUp, Connections } from '../assets/RightBarIcons'
 
 export default function ConnectionsDrop(): JSX.Element {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleDropDown = (): void => {
+    if (isOpen == false) {
+      //remove hidden, add transform
+      setIsOpen(true)
+    } else {
+      //revert/remove isOpen true
+      setIsOpen(false)
+    }
+  }
+
   return (
     <div>
       <button
@@ -9,6 +22,7 @@ export default function ConnectionsDrop(): JSX.Element {
         data-dropdown-trigger="click"
         className="rounded-[5px] p-1 w-full hover:shadow-inner-lg hover:bg-main-secondary text-main-accent hover:text-gray-200"
         type="button"
+        onClick={handleDropDown}
       >
         <div className="flex flex-row items-center h-[2.1875rem]">
           <div className="fill-current h-[2.1875rem] w-[2.1875rem] mr-2.5">

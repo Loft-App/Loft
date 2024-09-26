@@ -28,11 +28,17 @@ export default function Outliner(): JSX.Element {
   return (
     <div className="no-drag flex flex-col justify-start font-sans font-medium text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]">
       <div className="flex flex-row items-center font-medium h-[2.1875rem]">
-        <div className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-1">
+        <div
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem] mr-1"
+          title="Not yet implemented"
+        >
           <Grip />
         </div>
         Outliner -
-        <div className="mr-1 ml-auto fill-current text-main-accent h-[1.875rem] w-[1.875rem]">
+        <div
+          className="mr-1 ml-auto fill-current text-main-accent h-[1.875rem] w-[1.875rem]"
+          title="Not yet implemented"
+        >
           <Help />
         </div>
       </div>
