@@ -59,34 +59,56 @@ export default function LeftBar(): JSX.Element {
         {/* home */}
         <div
           id="home"
-          className="mt-4 fill-current text-main-accent h-10 w-10"
+          title="Not yet implemented"
+          className="mt-4 fill-current text-main-accent h-10 w-10 active:text-main-selected active:bg-main-secondary active:rounded-[5px] active:shadow-inner"
           onClick={handleHome}
         >
           <Home />
         </div>
         {/* direct messages */}
-        <div id="dm" className="fill-current text-main-accent h-10 w-10" onClick={handleDM}>
+        <div
+          id="dm"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-10 w-10 active:text-main-selected active:bg-main-secondary active:rounded-[5px] active:shadow-inner"
+          onClick={handleDM}
+        >
           <DMs />
         </div>
         {/* study */}
-        <div id="study" className="fill-current text-main-accent h-10 w-10" onClick={handleStudy}>
+        <div
+          id="study"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-10 w-10 active:text-main-selected active:bg-main-secondary active:rounded-[5px] active:shadow-inner"
+          onClick={handleStudy}
+        >
           <Study />
         </div>
         {/* calendar */}
         <div
           id="calendar"
-          className="fill-current text-main-accent h-10 w-10"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-10 w-10 active:text-main-selected active:bg-main-secondary active:rounded-[5px] active:shadow-inner"
           onClick={handleCalendar}
         >
           <Calendar />
         </div>
         {/* inbox */}
-        <div id="inbox" className="fill-current text-main-accent h-10 w-10" onClick={handleInbox}>
+        <div
+          id="inbox"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-10 w-10 active:text-main-selected active:bg-main-secondary active:rounded-[5px] active:shadow-inner"
+          onClick={handleInbox}
+        >
           <Inbox />
         </div>
         {/* more */}
         {/* add later, maybe as toast */}
-        <div id="more" className="fill-current text-main-accent h-10 w-10" onClick={handleMore}>
+        <div
+          id="more"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-10 w-10 active:text-main-selected active:bg-main-secondary active:rounded-[5px] active:shadow-inner"
+          onClick={handleMore}
+        >
           <More />
         </div>
         <div className="mt-auto">
@@ -94,7 +116,8 @@ export default function LeftBar(): JSX.Element {
           {/* add later, maybe as toast */}
           <div
             id="profile"
-            className="mb-4 fill-current text-main-accent h-10 w-10"
+            title="Not yet implemented"
+            className="mb-4 fill-current text-main-accent h-10 w-10 active:text-main-selected active:bg-main-secondary active:rounded-[5px] active:shadow-inner"
             onClick={handleProfile}
           >
             <Profile />

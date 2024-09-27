@@ -19,7 +19,8 @@ module.exports = {
           secondary: 'var(--main-secondary)',
           tertiary: 'var(--main-tertiary)',
           accent: 'var(--main-accent)',
-          active: 'var(--main-active)'
+          active: 'var(--main-active)',
+          selected: 'var(--main-selected)'
         },
         text: {
           50: 'var(--text-50)',

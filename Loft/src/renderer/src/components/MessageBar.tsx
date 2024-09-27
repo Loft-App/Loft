@@ -1,4 +1,15 @@
 //import React, { useState } from 'react'
+import {
+  Bold,
+  Italic,
+  Underline,
+  Strikethrough,
+  Attach,
+  Mention,
+  Emoji,
+  Poll,
+  Send
+} from '../assets/MessageBarIcons'
 
 export default function MessageBar(): JSX.Element {
   return (
@@ -13,9 +24,72 @@ export default function MessageBar(): JSX.Element {
         ></input>
       </div>
       <div
-        className="no-drag flex justify-start mt-2 min-h-[2.1875rem] min-w-[calc(100vw-396px)]" //not showing box dimensions
+        id="message-icons"
+        className="no-drag flex flex-row justify-start mt-1 min-h-[2.1875rem] min-w-[calc(100vw-396px)]" //not showing box dimensions
       >
-        icons here
+        <div
+          id="bold"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Bold />
+        </div>
+        <div
+          id="italic"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Italic />
+        </div>
+        <div
+          id="underline"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Underline />
+        </div>
+        <div
+          id="strikethrough"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Strikethrough />
+        </div>
+        <div
+          id="attach"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Attach />
+        </div>
+        <div
+          id="mention"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Mention />
+        </div>
+        <div
+          id="emoji"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Emoji />
+        </div>
+        <div
+          id="poll"
+          title="Not yet implemented"
+          className="fill-current text-main-accent h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Poll />
+        </div>
+        <div
+          id="send"
+          title="Not yet implemented"
+          className="fill-current text-main-accent mr-0 ml-auto h-[2.1875rem] w-[2.1875rem]"
+        >
+          <Send />
+        </div>
       </div>
     </div>
   )
