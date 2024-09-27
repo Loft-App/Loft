@@ -1,3 +1,4 @@
+//imports all components from their files
 import Notifications from './RightBar/bell-fill'
 import NotificationsOff from './RightBar/bell-slash-fill'
 import Zen from './RightBar/brilliance'
@@ -18,9 +19,10 @@ import Music from './RightBar/music-note-beamed'
 import Connections from './RightBar/people-fill'
 import OtherPeople from './RightBar/person-fill'
 import Help from './RightBar/question-circle'
-import Search from './RightBar/search';
-import Trello from './RightBar/trello';
+import Search from './RightBar/search'
+import Trello from './RightBar/trello'
 
+//exports them as the same name to be reused elsewhere, but all can be imported with one file
 export { Notifications as Notifications }
 export { NotificationsOff as NotificationsOff }
 export { Zen as Zen }

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+//imports all icons used in this component
 import {
   CaretDown,
   CaretUp,
@@ -13,10 +14,12 @@ import {
 } from '../assets/RightBarIcons'
 
 export default function QuickSettingsDrop(): JSX.Element {
+  //ternary to check dropdown state (open here by default)
   const [isOpen, setIsOpen] = useState(true)
 
   return (
     <div>
+      {/* button to with onClick to toggle boolean states */}
       <button
         id="quicksettings-btn"
         data-dropdown-toggle="quicksettings-dropdowns"
@@ -31,11 +34,13 @@ export default function QuickSettingsDrop(): JSX.Element {
           </div>
           Quick Settings
           <div className="ml-auto fill-current h-[1.875rem] w-[1.875rem]">
+            {/* ternary check to change icon */}
             {!isOpen ? <CaretUp /> : <CaretDown />}
           </div>
         </div>
       </button>
       {isOpen && (
+        // dropdown content, tailwind property changing with ternary is not used in either of these ul, no idea why, maybe not needed?
         <div id="quick-settings-dropdowns" className="">
           <ul className="mx-6" aria-labelledby="connections-btn">
             {/* mic volume */}

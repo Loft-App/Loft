@@ -1,3 +1,4 @@
+//imports all components from their files
 import Mention from './MessageBar/at'
 import Poll from './MessageBar/bar-chart-line-fill'
 import Emoji from './MessageBar/emoji-laughing'
@@ -8,6 +9,7 @@ import Italic from './MessageBar/type-italic'
 import Strikethrough from './MessageBar/type-strikethrough'
 import Underline from './MessageBar/type-underline'
 
+//exports them as the same name to be reused elsewhere, but all can be imported with one file
 export { Mention as Mention }
 export { Poll as Poll }
 export { Emoji as Emoji }

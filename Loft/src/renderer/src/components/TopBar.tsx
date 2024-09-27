@@ -4,19 +4,24 @@ import { useState } from 'react'
 
 export default function TopBar(): JSX.Element {
   //minimize, maximise, and close
+  //ternary to check maximised state (not by default, may be changed depending on width/height upon opening)
   const [isMaximized, setIsMaximized] = useState(false)
 
+  //minimizes window
   const handleMinimize = (): void => {
     window.electron.ipcRenderer.send('minimize-window')
   }
+  //maximizes window
   const handleMaximize = (): void => {
     window.electron.ipcRenderer.send('maximize-window')
     setIsMaximized(true)
   }
+  //unmaximizes window
   const handleUnmaximize = (): void => {
     window.electron.ipcRenderer.send('unmaximize-window')
     setIsMaximized(false)
   }
+  //closes/exits window/program
   const handleClose = (): void => {
     window.electron.ipcRenderer.send('close-window')
   }
@@ -35,9 +40,11 @@ export default function TopBar(): JSX.Element {
         id="control-buttons"
         className="no-drag absolute content-center right-2 text-main-text font-semibold"
       >
+        {/* minimize button */}
         <button id="minimize" className="p-2" onClick={handleMinimize}>
           &#128469;
         </button>
+        {/* maximise button */}
         <button
           id="maximize"
           className="p-2"
@@ -46,6 +53,7 @@ export default function TopBar(): JSX.Element {
         >
           &#128470;
         </button>
+        {/* close button */}
         <button id="close" className="p-2" onClick={handleClose}>
           &#x2715;
         </button>

@@ -7,7 +7,7 @@ export default function HomePage(): JSX.Element {
 
   return (
     <div className="flex flex-col mx-2.5 mt-2.5">
-      {/* make chatbox component */}
+      {/* all home page content imported here */}
       <ChatBox />
       <MessageBar />
     </div>

@@ -5,12 +5,13 @@ import LeftBar from './components/LeftBar'
 import RightBar from './components/RightBar'
 import HomePage from './components/HomePage'
 
-//move to another file for auth? or keep here and import elsewhere?
+//Supabase setup, move to another file for auth? or keep here and import elsewhere?
 const supabaseUrl = 'https://ptdpvuhkxsotckhhruuk.supabase.co'
 const supabaseKey =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0ZHB2dWhreHNvdGNraGhydXVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczODc4NDQsImV4cCI6MjA0Mjk2Mzg0NH0.hK1L8pOhrLHtwxtE-GnX0S9zVfhNc-nb4ipBrP9asOY'
 export const supabase = createClient(supabaseUrl, supabaseKey)
 
+//main function containing return for all major components of code
 function App(): JSX.Element {
   return (
     //overflow-auto to overflow-hidden later to avoid potentially scaling issues?
@@ -19,12 +20,13 @@ function App(): JSX.Element {
       <LeftBar />
       <RightBar />
       <HomePage />
-      <div className="">{/*  */}</div>
     </main>
   )
 }
 
 export default App
+
+//ORIGINAL CODE BELOW, ONLY FOR REFERENCE
 
 // import Versions from './components/Versions'
 // import electronLogo from './assets/electron.svg'

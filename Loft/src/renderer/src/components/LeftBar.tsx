@@ -1,14 +1,16 @@
 import { useState } from 'react'
+//imports icons for this file in one
 import { Home, DMs, Study, Calendar, Inbox, More, Profile } from '../assets/LeftBarIcons'
 
 export default function LeftBar(): JSX.Element {
   //functions for leftbar menu
   //unfinished, handle need to complete func, and need usestate for only one
-
+  //ternary to check selected page
   const [isSelected, setIsSelected] = useState(false)
 
   //make function to set all else to false if needed?
 
+  //functions for page check with useState, non-functional currently, do something with else statements?
   const handleHome = (): void => {
     if (isSelected == false) {
       //add page navigator or call to component
@@ -56,7 +58,7 @@ export default function LeftBar(): JSX.Element {
     <div className="no-drag flex float-left justify-center m-2.5 rounded-[5px] bg-main-primary opacity-70 min-h-[calc(100vh-60px)] w-[4.5rem]">
       {/* find solution other than mx? margin is pushing away bottom div */}
       <div className="flex flex-col justify-start gap-[1.875rem]">
-        {/* home */}
+        {/* home button */}
         <div
           id="home"
           title="Not yet implemented"
@@ -65,7 +67,7 @@ export default function LeftBar(): JSX.Element {
         >
           <Home />
         </div>
-        {/* direct messages */}
+        {/* direct messages button */}
         <div
           id="dm"
           title="Not yet implemented"
@@ -74,7 +76,7 @@ export default function LeftBar(): JSX.Element {
         >
           <DMs />
         </div>
-        {/* study */}
+        {/* study button */}
         <div
           id="study"
           title="Not yet implemented"
@@ -83,7 +85,7 @@ export default function LeftBar(): JSX.Element {
         >
           <Study />
         </div>
-        {/* calendar */}
+        {/* calendar button */}
         <div
           id="calendar"
           title="Not yet implemented"
@@ -92,7 +94,7 @@ export default function LeftBar(): JSX.Element {
         >
           <Calendar />
         </div>
-        {/* inbox */}
+        {/* inbox button */}
         <div
           id="inbox"
           title="Not yet implemented"
@@ -101,7 +103,7 @@ export default function LeftBar(): JSX.Element {
         >
           <Inbox />
         </div>
-        {/* more */}
+        {/* more button */}
         {/* add later, maybe as toast */}
         <div
           id="more"
@@ -112,7 +114,7 @@ export default function LeftBar(): JSX.Element {
           <More />
         </div>
         <div className="mt-auto">
-          {/* profile */}
+          {/* profile button */}
           {/* add later, maybe as toast */}
           <div
             id="profile"

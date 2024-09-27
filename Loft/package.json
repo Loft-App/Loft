@@ -1,7 +1,7 @@
 {
   "name": "loft",
   "productName": "Loft",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An elevated place to study",
   "main": "./dist/main/index.js",
   "author": "duskire.com",

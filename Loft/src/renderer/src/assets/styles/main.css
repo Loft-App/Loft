@@ -9,8 +9,6 @@
   .no-drag {
     -webkit-app-region: no-drag;
   }
-  .dropdown-menu {
-  }
   @supports (font-variation-settings: normal) {
     @font-face {
       font-family: "Expletus Sans";
@@ -21,7 +19,6 @@
         format("truetype");
       font-named-instance: "Regular";
     }
-
     @font-face {
       font-family: "Expletus Sans";
       font-style: italic;
@@ -31,7 +28,6 @@
         format("truetype");
       font-named-instance: "Italic";
     }
-
     @font-face {
       font-family: "Dosis";
       font-style: normal;

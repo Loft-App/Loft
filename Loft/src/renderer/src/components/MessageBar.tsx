@@ -1,4 +1,5 @@
 //import React, { useState } from 'react'
+//imports icons for this file in one
 import {
   Bold,
   Italic,
@@ -17,12 +18,14 @@ export default function MessageBar(): JSX.Element {
       <div
         className="no-drag flex min-h-24 min-w-[calc(100vw-416px)]" //not showing box dimensions
       >
+        {/* typing box */}
         <input
           type="text"
           id="message-input"
           className="block w-full px-4 font-sans text-md text-main-textli bg-main-tertiary rounded-[5px] opacity-80 focus:outline-none"
         ></input>
       </div>
+      {/* button icons for markdown (in future) */}
       <div
         id="message-icons"
         className="no-drag flex flex-row justify-start mt-1 min-h-[2.1875rem] min-w-[calc(100vw-396px)]" //not showing box dimensions

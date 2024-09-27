@@ -1,9 +1,11 @@
 //import React, { useState } from 'react'
+//imports for all dropdown components
 import ConnectionsDrop from './ConnectionsDrop'
 import OtherPeopleDrop from './OtherPeopleDrop'
 import ChannelsDrop from './ChannelsDrop'
 import ChainsDrop from './ChainsDrop'
 import QuickSettingsDrop from './QuickSettingsDrop'
+//imports icons for this file in one, remove commented ones when used (and move to correct quick settings)
 import {
   //NotificationsOff,
   //CameraOff,
@@ -15,8 +17,6 @@ import {
 
 //fixed minimum window size problem with overflow-y-auto
 export default function Outliner(): JSX.Element {
-  //create onClick function using current (not active) to check and change active states
-  //implement ways to differentiate between classes
   return (
     <div className="no-drag flex flex-col justify-start font-sans font-medium text-main-text text-2xl mt-4 mx-3 min-h-[calc(full-52px)] w-[15.375rem]">
       <div className="flex flex-row items-center font-medium h-[2.1875rem]">
@@ -34,11 +34,12 @@ export default function Outliner(): JSX.Element {
           <Help />
         </div>
       </div>
-      {/* drop down lists here */}
+      {/* all dropdowns */}
       <div
         id="outliner-dropdowns"
         className="mt-4 fill-current text-xl overflow-y-auto justify-between"
       >
+        {/* dropdowns at top of RightBar */}
         <div id="top-dropdowns" className="">
           {/* connections */}
           <ConnectionsDrop />
@@ -49,6 +50,7 @@ export default function Outliner(): JSX.Element {
           {/* chains */}
           <ChainsDrop />
         </div>
+        {/* dropdowns at bottom of RightBar */}
         <div id="bottom-dropdowns" className="">
           {/* quick settings */}
           <QuickSettingsDrop />
