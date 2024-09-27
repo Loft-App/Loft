@@ -1,4 +1,5 @@
 //import React, { useState } from 'react'
+import ChatBox from './ChatBox'
 import MessageBar from './MessageBar'
 
 export default function HomePage(): JSX.Element {
@@ -7,10 +8,8 @@ export default function HomePage(): JSX.Element {
   return (
     <div className="flex flex-col mx-2.5 mt-2.5">
       {/* make chatbox component */}
-      <div id="chat-box" className=""></div>
-      <div className="mt-auto">
-        <MessageBar />
-      </div>
+      <ChatBox />
+      <MessageBar />
     </div>
   )
 }

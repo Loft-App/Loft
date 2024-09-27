@@ -5,8 +5,8 @@ import HomePage from './components/HomePage'
 
 function App(): JSX.Element {
   return (
-    //overflow-auto to main
-    <main className="h-screen bg-main-background">
+    //overflow-auto to overflow-hidden later to avoid potentially scaling issues?
+    <main className="h-screen bg-main-background overflow-auto">
       <TopBar />
       <LeftBar />
       <RightBar />

@@ -36,10 +36,10 @@ export default function ConnectionsDrop(): JSX.Element {
       </button>
       <div
         id="connections-dropdowns"
-        className="z-10 hidden bg-white divide-y rounded-[5px] shadow w-44"
+        className="z-10 divide-y rounded-[5px] w-44 {{ isOpen ? 'visible' : 'hidden' }}"
       >
         <ul className="mx-6 py-2" aria-labelledby="connections-btn">
-          <li className="block px-4 py-2 hover:bg-gray-100">test</li>
+          <li className="block px-4 pb-2">test</li>
         </ul>
       </div>
     </div>
