@@ -1,7 +1,15 @@
+//import { useEffect, useState } from 'react'
+import { createClient } from '@supabase/supabase-js'
 import TopBar from './components/TopBar'
 import LeftBar from './components/LeftBar'
 import RightBar from './components/RightBar'
 import HomePage from './components/HomePage'
+
+//move to another file for auth? or keep here and import elsewhere?
+const supabaseUrl = 'https://ptdpvuhkxsotckhhruuk.supabase.co'
+const supabaseKey =
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0ZHB2dWhreHNvdGNraGhydXVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczODc4NDQsImV4cCI6MjA0Mjk2Mzg0NH0.hK1L8pOhrLHtwxtE-GnX0S9zVfhNc-nb4ipBrP9asOY'
+export const supabase = createClient(supabaseUrl, supabaseKey)
 
 function App(): JSX.Element {
   return (
