@@ -10,6 +10,20 @@ module.exports = {
         sans: ['Dosis', ...defaultTheme.fontFamily.sans],
         expletus: ['Expletus Sans']
       },
+      //see topbar code for source and usage of animatedgradient, backgroundsize, & animation, used here, in main.css, and topbar
+      keyframes: {
+        animatedgradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' }
+        }
+      },
+      backgroundSize: {
+        '300%': '300%'
+      },
+      animation: {
+        gradient: 'animatedgradient 6s ease infinite alternate'
+      },
       colors: {
         main: {
           text: 'var(--main-text)',
